@@ -1,0 +1,17 @@
+按照以下步骤来写
+模块一：用户登录
+(1)数据库表jd_user(uid,uname,upwd)
+(2)
+(3)让web服务器向客户端提供如下静态资源
+public/login.html 用户登录
+public/register.html 用户注册
+public/usercenter.html 用户注册
+css/js/...
+
+(4)让web服务器向客户提供如下动态资源
+POST/login  执行用户登录验证
+返回{code:1,msg:"用户登录成功"}
+返回{code:2,msg:"用户名和密码有误"}
+POST/register  执行用户注册
+返回{code:3,msg:"用户注册成功"}
+(5)

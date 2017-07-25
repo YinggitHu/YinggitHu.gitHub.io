@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/ylindex.css"/>
+    <link rel="stylesheet" href="css/yldetail.css"/>
+    <link rel="stylesheet" href="css/product_right.css"/>
+    <!--<script src="js/sptabs.js"></script>-->
+    <title>悦桔拉拉详情页面</title>
+</head>
+<body>
+    <!--页面顶部! -->
+    <header id="hmtop">
+        <!-- 1.顶部导航-->
+        <div class="header">
+            <ul class="message-l">
+                <li><a href="#myModal"  data-toggle="modal" target="_top">亲，请登录</a></li>
+                <li><a href="#" target="_top">免费注册</a></li>
+            </ul>
+            <ul class="message-r">
+                <li><a href="#" target="_top">商城首页</a></li>
+                <li class="per"><a href="#" target="_top">个人中心</a></li>
+                <li class="car"><a href="#" target="_top">购物车</a></li>
+                <li class="show"><a href="#" target="_top">收藏夹</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- 2.搜索框-->
+    <div class="hmtop-main">
+        <div class="log lf">
+            <img src="images/logobig.png" alt="log"/>
+        </div>
+        <div class="search lf">
+            <form>
+                <input type="text" id="txtSearch" class="text" placeholder="搜索"/>
+                <input type="submit" id="topsearch" class="submit" index="1" value="搜索"/>
+            </form>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!-- 主导航-->
+    <div id="nav">
+        <div class="catetitle">
+            <a href="javascript:void(0)">全部分类</a>
+        </div>
+        <ul id="nav_items">
+            <li>
+                <b></b>
+                <a href="index.html">首页</a>
+            </li>
+            <li>
+                <b></b>
+                <a href="yjdetail.html">闪购</a>
+            </li>
+            <li>
+                <b></b>
+                <a href="yjdetail.html">限时购</a>
+            </li>
+            <li>
+                <b></b>
+                <a href="yjdetail.html">团购</a>
+            </li>
+            <li>
+                <b></b>
+                <a href="yjdetail.html">大包装</a>
+            </li>
+        </ul>
+        <div class="nav-extra">
+            <i></i>
+            <b></b>
+            <a>我的福利</a>
+            <i></i>
+            <img src="images/extra.png" alt="a"/>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- 横线-->
+    <div id="line"></div>
+    <!--主体内容-->
+    <section id="main" class="clear">
+        <!--产品的类别导航路径-->
+        <div class="bread-crumb">
+            <!--<a href="#"><b>家居家装</b></a>-->
+            <a href="#">首页</a>
+            <span>&gt;</span>
+            <a href="#">分类</a>
+            <span>&gt;</span>
+            <a href="#">内容</a>
+
+        </div>
+
+        <!--产品简介-->
+        <div id="product_intro">
+            <div id="preview">
+                <div id="mediumDiv">
+                    <img id="mImg" src="images/products/product-s1-m.jpg"/>
+                    <div id="mask"></div>
+                    <div id="superMask"></div>
+                </div>
+                <div id="largeDiv"></div>
+                <h1>
+                    <a class="backward disabled"></a>
+                    <a class="forward"></a>
+                    <ul id="icon_list">
+                        <li><img src="images/products/product-s1.jpg" /></li>
+                        <li><img src="images/products/product-s2.jpg" /></li>
+                        <li><img src="images/products/product-s3.jpg" /></li>
+                        <li><img src="images/products/product-s4.jpg" /></li>
+                        <li><img src="images/products/product-s1.jpg" /></li>
+                        <li><img src="images/products/product-s2.jpg" /></li>
+                        <li><img src="images/products/product-s3.jpg" /></li>
+                        <li><img src="images/products/product-s4.jpg" /></li>
+                    </ul>
+                </h1>
+            </div>
+            <h1><span>良品铺子 手剥松子218g </span><b>坚果炒货 巴西松子</b></h1>
+            <ul id="summary">
+                <li id="summary_price">
+                    <p>促&nbsp;销&nbsp;价：</p>
+                    <div class="content">
+                        <b>￥56.90</b>
+                        <a href="#">(降价通知)</a>
+                    </div>
+                </li>
+                <li id="summary_market">
+                    <p class="title">商品编号：</p>
+                    <div class="content">
+                        <span>960148</span>
+                    </div>
+                </li>
+                <li id="summary_grade">
+                    <p>商品评分：</p>
+                    <div class="content">
+                        <span></span>
+                        <a href="#">(已有<b>47662</b>人评价)</a>
+                    </div>
+                </li>
+                <li id="summary_stock">
+                    <p>配 送 至：</p>
+                    <div class="content">
+                        <!--送货地址的下拉选择框-->
+                        <div id="store_select">
+                            <h3>北京海淀区大钟寺<b></b></h3>
+                            <!--弹出部分-->
+                            <div id="store_content">
+                                <ul id="store_tabs">
+                                    <li class="hover">北京<b></b></li>
+                                    <li >海淀区<b></b></li>
+                                    <li >三环以内<b></b></li>
+                                </ul>
+                                <ul id="store_items">
+                                    <li><a href="#">北京</a></li>
+                                    <li><a href="#">上海</a></li>
+                                    <li><a href="#">天津</a></li>
+                                    <li><a href="#">重庆</a></li>
+                                    <li><a href="#">河北</a></li>
+                                    <li><a href="#">山西</a></li>
+                                    <li><a href="#">河南</a></li>
+                                    <li><a href="#">辽宁</a></li>
+                                    <li><a href="#">吉林</a></li>
+                                    <li><a href="#">黑龙江</a></li>
+                                    <li><a href="#">内蒙古</a></li>
+                                    <li><a href="#">江苏</a></li>
+                                    <li><a href="#">山东</a></li>
+                                    <li><a href="#">安徽</a></li>
+                                    <li><a href="#">浙江</a></li>
+                                    <li><a href="#">湖北</a></li>
+                                    <li><a href="#">福建</a></li>
+                                    <li><a href="#">四川</a></li>
+                                    <li><a href="#">云南</a></li>
+                                    <li><a href="#">新疆</a></li>
+                                    <li><a href="#">西藏</a></li>
+                                </ul>
+                                <div id="store_close"></div>
+                            </div>
+
+                        </div>
+                        <b>有货</b>，23:00前完成下单，预计<b>明日（12月06日）</b>送达
+                    </div>
+                </li>
+                <li id="summary_service">
+                    <p>服&nbsp;&nbsp;务：</p>
+                    <div class="content">
+                        由 <span>商家</span> 发货并提供售后服务
+                    </div>
+                </li>
+            </ul>
+            <ul id="choose">
+                <li id="choose_color">
+                    <p>口味：</p>
+                    <div class="content">
+                        <a href="#" class="selected">
+                            <!--<img src="images\products\p_icon_01.jpg" />-->
+                            <span>原味</span>
+                            <b></b>
+                        </a>
+                        <a href="#">
+                            <!--<img src="images\products\p_icon_02.jpg" />-->
+                            <span>奶油</span>
+                            <b></b>
+                        </a>
+                        <a href="#">
+                            <!--<img src="images\products\p_icon_02.jpg" />-->
+                            <span>炭烧</span>
+                            <b></b>
+                        </a>
+                        <a href="#">
+                            <!--<img src="images\products\p_icon_02.jpg" />-->
+                            <span>咸香</span>
+                            <b></b>
+                        </a>
+                    </div>
+                </li>
+                <li id="choose_amount">
+                    <p>购买数量：</p>
+                    <div class="content">
+                        <a href="#" class="btn_reduce"></a>
+                        <input type="text" value="1" />
+                        <a href="#" class="btn_add"></a>
+                    </div>
+                </li>
+                <li id="choose_btns" class="clear">
+                    <a href="#" class="choose_btn_append">立刻购买</a>
+                    <a href="#" class="choose_mark">加入购物车</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--左侧浮动栏-->
+        <div id="left_product">
+            <!--相关分类-->
+            <div id="related_sorts">
+                <p>相关分类</p>
+                <ul class="m_content">
+                    <li><a href="#">纸品湿巾</a></li>
+                    <li><a href="#">衣物清洁</a></li>
+                    <li><a href="#">清洁工具</a></li>
+                    <li><a href="#">驱虫用品</a></li>
+                    <li><a href="#">家庭清洁</a></li>
+                    <li><a href="#">皮具护理</a></li>
+                    <li><a href="#">一次性用品</a></li>
+                </ul>
+            </div>
+
+            <!--最终购买-->
+            <div class="view_buy">
+                <p>浏览了该商品的用户最终购买</p>
+                <ul class="m_content">
+                    <li>
+                        <p><a href="#"><img src="images/products/product-s1-m.jpg" /></a></p>
+                        <a href="#">【三只松鼠_开口松子】零食坚果特产炒货东北红松子原味</a>
+                        <h2><a href="#">￥22.90</a></h2>
+                    </li>
+                    <li>
+                        <p><a href="#"><img src="images/products/product-s1-m.jpg" /></a></p>
+                        <a href="#">【三只松鼠_开口松子】零食坚果特产炒货东北红松子原味</a>
+                        <h2><a href="#">￥23.90</a></h2>
+                    </li>
+                    <li>
+                        <p><a href="#"><img src="images/products/product-s1-m.jpg" /></a></p>
+                        <a href="#">【三只松鼠_开口松子】零食坚果特产炒货东北红松子原味</a>
+                        <h2><a href="#">￥24.90</a></h2>
+                    </li>
+                    <li class="no_bottom">
+                        <p><a href="#"><img src="images/products/product-s1-m.jpg" /></a></p>
+                        <a href="#">【三只松鼠_开口松子】零食坚果特产炒货东北红松子原味</a>
+                        <h2><a href="#">￥25.90</a></h2>
+                    </li>
+                </ul>
+            </div>
+
+            <!--其他-->
+            <ul id="left_shows">
+                <li>
+                    <a><img src="images/products/left_p001.jpg" /></a>
+                </li>
+                <li>
+                    <a><img src="images/products/left_p002.jpg" /></a>
+                </li>
+                <li>
+                    <a><img src="images/products/left_p003.jpg" /></a>
+                </li>
+            </ul>
+        </div>
+
+        <!--右侧产品信息-->
+        <div id="right_product">
+            <!--优惠套装-->
+            <div id="favorable_suit">
+                <p class="main_tabs">优惠套装</p>
+                <div class="m_content">
+                    <div class="master">
+                        <span class="add"></span>
+                        <a href="#"><img src="images/cp.jpg" /></a>
+                        <p><a href="#">萨拉米 1+1小鸡腿</a></p>
+                    </div>
+                    <ul  class="suits">
+                        <li >
+                            <span class="add"></span>
+                            <a href="#"><img src="images/cp2.jpg" /></a>
+                            <p><a href="#">ZEK 原味海苔</a></p>
+                        </li>
+                        <li>
+                            <span class="add"></span>
+                            <a href="#"><img src="images/cp3.jpg" /></a>
+                            <p><a href="#">ZEK 原味海苔</a></p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/cp4.jpg" /></a>
+                            <p><a href="#">ZEK 原味海苔</a></p>
+                        </li>
+                    </ul>
+                    <div class="infos">
+                        <span></span>
+                        <h1><a href="#">自由组合</a></h1>
+                        <p>套装价：<b class="empasis">88.88</b></p>
+                        <!--<p>本店价：<b class="strike">142.40</b></p>-->
+                        <p>立即节省：<b>137.10</b></p>
+                        <div class="btns">
+                            <a href="#" class="btn_buy">购买套装</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--产品详细-->
+            <div id="product_detail">
+                <!--页签-->
+                <ul class="main_tabs">
+                    <li class="current">
+                        <a href="#product_info">商品介绍</a></li>
+                    <li><a href="#product_data">规格参数</a></li>
+                    <li><a href="#product_package">包装清单</a></li>
+                    <li><a href="#">商品评价(43390)</a></li>
+                    <li><a href="#product_saleAfter">售后保障</a></li>
+                </ul>
+
+                <!--商品介绍-->
+                <div id="product_info" class="show">
+                    <ul class="detail_list">
+                        <li>产品类型: 烘炒类</li>
+                        <li>原料产地: 巴基斯坦</li>
+                        <li>产地: 湖北省武汉市</li>
+                        <li>配料表: 进口松子、食用盐</li>
+                        <li>产品规格: 210g</li>
+                        <li>保质期: 180天</li>
+                        <li>产品标准号: GB/T 22165</li>
+                        <li>生产许可证编号： QS4201 1801 0226</li>
+                        <li>储存方法： 请放置于常温、阴凉、通风、干燥处保存 </li>
+                    </ul>
+
+                    <div class="detail_content">
+                        <p><a src="#"><img src="images/tw1.jpg" /></a></p>
+                        <div class="dotted_split"></div>
+                        <div class="jd_split">
+                            <b>产品特色</b>
+                            <span>Selling Point</span>
+                        </div>
+                        <p><a src="#"><img src="images/tw2.jpg" /></a></p>
+                        <div class="dotted_split"></div>
+                        <p><a src="#"><img src="images/tw3.jpg" /></a></p>
+                        <div class="dotted_split"></div>
+                        <div class="jd_split">
+                            <b>适用范围</b>
+                            <span>Heritage</span>
+                        </div>
+                        <p><a src="#"><img src="images/tw4.jpg" /></a></p>
+                        <div class="dotted_split"></div>
+                        <div class="jd_split">
+                            <b>使用说明</b>
+                            <span>Instructions</span>
+                        </div>
+                        <p><a src="#"><img src="images/tw5.jpg" /></a></p>
+                    </div>
+                </div>
+
+                <!--规格参数-->
+                <table id="product_data">
+                    <thead>
+                    <tr>
+                        <th colspan="2">主体</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr></tr>
+                    <tr>
+                        <td>品牌</td>
+                        <td>三只松鼠）</td>
+                    </tr>
+                    <tr>
+                        <td>类别</td>
+                        <td>零食</td>
+                    </tr>
+                    <tr>
+                        <td>产品规格（g/kg）</td>
+                        <td>210g</td>
+                    </tr>
+                    <tr>
+                        <td>保质期:）</td>
+                        <td>180天</td>
+                    </tr>
+                    <tr>
+                        <td>配料表</td>
+                        <td>进口松子、食用盐</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <!--包装清单-->
+                <div id="product_package">
+                    <p>良品铺子 手剥松子218g*2</p>
+                </div>
+
+                <!--售后保障-->
+                <div id="product_saleAfter">
+                    <p>有质量问题包退换</p>
+                </div>
+            </div>
+
+            <!--服务承诺-->
+            <div id="promise">
+                <b>服务承诺：</b>
+                <p>本店向您保证所售商品均为正品行货，本店自营商品开具机打发票或电子发票。凭质保证书及本店发票，可享受全国联保服务（奢侈品、钟表除外；奢侈品、钟表由本店联系保修，享受法定三包售后服务），与您亲临商场选购的商品享受相同的质量保证。本店还为您提供具有竞争力的商品价格和运费政策，请您放心购买！ </p>
+                <p>注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！</p>
+            </div>
+
+            <!--权力声明-->
+            <div id="state">
+                <span>权利声明：</span>
+                <p>本店上的所有商品信息、客户评价、商品咨询、网友讨论等内容，是本店重要的经营资源，未经许可，禁止非法转载使用。</p>
+                <p><b>注：</b>本站商品信息均来自于合作方，其真实性、准确性和合法性由信息拥有者（合作方）负责。本站不提供任何保证，并不承担任何法律责任。</p>
+            </div>
+
+            <!--商品评价-->
+            <div id="comment">
+                <p class="main_tabs">商品评价</p>
+                <div class="m_content">
+                    <div class="rate">
+                        <span>97</span><b>%</b>
+                        <p>好评度</p>
+                    </div>
+                    <div class="percent">
+                        <dl>
+                            <dt>好评(<span>97%</span>)</dt>
+                            <dd><p style="width:97px;"></p></dd>
+                        </dl>
+                        <dl>
+                            <dt>中评(<span>2%</span>)</dt>
+                            <dd><p style="width:2px;"></p></dd>
+                        </dl>
+                        <dl>
+                            <dt>差评(<span>1%</span>)</dt>
+                            <dd><p style="width:1px;"></p></dd>
+                        </dl>
+                    </div>
+                    <div class="buyers">
+                        <p>买家印象：</p>
+                        <ul>
+                            <li>味道不错<span>(8450)</span></li>
+                            <li>颗粒饱满<span>(6931)</span></li>
+                            <li>商品不错<span>(5034)</span></li>
+                            <li>香脆可口<span>(5003)</span></li>
+                            <li>个个开口<span>(4834)</span></li>
+                            <li>价格便宜<span>(4712)</span></li>
+                        </ul>
+                    </div>
+                    <div class="btns">
+                        您可对已购商品进行评价
+                        <a class="btn_comment" href="#">发评价积分</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--评价详细-->
+            <div id="comment_list">
+                <ul class="main_tabs">
+                    <li class="current"><a href="#">全部评价(49639)</a></li>
+                    <li><a href="#">好评(48232)</a></li>
+                    <li><a href="#">中评(992)</a></li>
+                    <li><a href="#">差评(415)</a></li>
+                    <li><a href="#">有晒单的评价(962)</a></li>
+                </ul>
+                <!--全部评价-->
+                <div id="comment_0" >
+                    <div class="comment_item" >
+                        <ul>
+                            <li><a href="#"><img src="images/user_01.jpg" /></a></li>
+                            <li>kkngj2008 </li>
+                            <li><b>金牌会员</b><span>广东</span></li>
+                        </ul>
+                        <div>
+                            <div class="topic">
+                                <p class="star3"></p>
+                                <a href="#">2014-08-12 19:01</a>
+                            </div>
+                            <table>
+                                <tr>
+                                    <td>标签：</td>
+                                    <td class="comment_tag">
+                                        <span>好吃</span>
+                                        <span>喜欢的味道</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>心得：</td>
+                                    <td>味道不错喜欢吃</td>
+                                </tr>
+                                <tr>
+                                    <td>用户晒单：</td>
+                                    <td class="comment_show">
+                                        <a href="#"><img src="images/act1.png"/></a>
+                                        <a href="#"><img src="images/act1.png"/></a>
+                                        <a href="#"><img src="images/act2.png"/></a>
+                                        共<b>3</b>张图片<a href="#">查看晒单&gt;</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>购买日期：</td>
+                                    <td>2017-7-11</td>
+                                </tr>
+                            </table>
+                            <p class="btns">
+                                <a href="#">有用(3)</a>
+                                <a href="#">回复(0)</a>
+                            </p>
+                        </div>
+                        <div class="corner"></div>
+                    </div>
+                    <div class="comment_item" >
+                        <ul>
+                            <li><a href="#"><img src="images/user_01.jpg" /></a></li>
+                            <li>kkngj2008 </li>
+                            <li><b>金牌会员</b><span>广东</span></li>
+                        </ul>
+                        <div>
+                            <div class="topic">
+                                <p class="star3"></p>
+                                <a href="#">2014-08-12 19:01</a>
+                            </div>
+                            <table>
+                                <tr>
+                                    <td>标签：</td>
+                                    <td class="comment_tag">
+                                        <span>好吃</span>
+                                        <span>喜欢的味道</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>心得：</td>
+                                    <td>味道不错喜欢吃</td>
+                                </tr>
+                                <tr>
+                                    <td>用户晒单：</td>
+                                    <td class="comment_show">
+                                        <a href="#"><img src="images/act1.png"/></a>
+                                        <a href="#"><img src="images/act1.png"/></a>
+                                        <a href="#"><img src="images/act2.png"/></a>
+                                        共<b>3</b>张图片<a href="#">查看晒单&gt;</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>购买日期：</td>
+                                    <td>2017-7-11</td>
+                                </tr>
+                            </table>
+                            <p class="btns">
+                                <a href="#">有用(3)</a>
+                                <a href="#">回复(0)</a>
+                            </p>
+                        </div>
+                        <div class="corner"></div>
+                    </div>
+                </div>
+                <!--可能还会有其他评论分类：比如“好评”等-->
+                <!--页码-->
+                <div>
+                    <a class="comment_show_all" href="#">[查看全部评价]</a>
+                    <div id="pages">
+                        <a class="current">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">....</a>
+                        <a href="#">3421</a>
+                        <a href="#">下一页</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--咨询-->
+            <div id="consult" class="clear">
+                <ul class="main_tabs">
+                    <li class="current"><a href="#">全部购买咨询</a></li>
+                    <li><a href="#">商品咨询</a></li>
+                    <li><a href="#">库存配送</a></li>
+                    <li><a href="#">支付</a></li>
+                    <li><a href="#">发票保修</a></li>
+                    <li><a href="#">支付帮助</a></li>
+                    <li><a href="#">配送帮助</a></li>
+                    <li><a href="#">常见问题</a></li>
+                    <li>
+                        <input type="text" id="txt_consult_search" value="请输入关键词" />
+                        <input type="button" value="搜索"  id="btn_consult_search" />
+                    </li>
+                    <li>
+                        <a id="add_consult" href="#">发表咨询</a>
+                    </li>
+                </ul>
+                <div class="m_content">
+                    <b>温馨提示：</b>因厂家更改产品包装、产地或者更换随机附件等没有任何提前通知，且每位咨询者购买情况、提问时间等不同，为此以下回复仅对提问者3天内有效，其他网友仅供参考！<br />若由此给您带来不便请多多谅解，谢谢！
+                </div>
+                <div id="consult_0">
+                    <div id="consult_result">
+                        <p>共搜索到<span>14</span>条相关咨询<a>返回</a></p>
+                        <h4>声明：以下回复仅对提问者3天内有效，其他网友仅供参考！</h4>
+                    </div>
+                    <div class="consult_item">
+                        <p>网&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;友：<b>135*****193_p</b><span>2017-07-11 12:27:13</span></p>
+                        <ul class="consult_ask">
+                            <li class="consult_title">咨询内容：</li>
+                            <li><a href="#">怎么买呀？</a></li>
+                        </ul>
+                        <ul class="consult_answer">
+                            <li class="consult_title">本店回复：</li>
+                            <li>您好！请您于客服联系。感谢您对本店的支持！祝您购物愉快！</li>
+                            <li class="consult_answer_time">2017-07-11 15:25:59</li>
+                        </ul>
+                    </div>
+                    <div class="consult_item">
+                        <p>网&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;友：<b>jd_158998lub</b><span>2017-07-11 14:19:00</span></p>
+                        <ul class="consult_ask">
+                            <li class="consult_title">咨询内容：</li>
+                            <li><a href="#">请问一箱里面有几袋?</a></li>
+                        </ul>
+                        <ul class="consult_answer">
+                            <li class="consult_title">本店回复：</li>
+                            <li>您好！4袋/箱， 感谢您对本店的支持！祝您购物愉快！</li>
+                            <li class="consult_answer_time">2017-07-11 16:44:06</li>
+                        </ul>
+                    </div>
+                    <div class="consult_item">
+                        <p>网&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;友：<b>ja_158998lub</b><span>2017-07-11 14:19:00</span></p>
+                        <ul class="consult_ask">
+                            <li class="consult_title">咨询内容：</li>
+                            <li><a href="#">请问一箱里面装几袋?</a></li>
+                        </ul>
+                        <ul class="consult_answer">
+                            <li class="consult_title">本店回复：</li>
+                            <li>您好！4瓶/箱， 感谢您对本店的支持！祝您购物愉快！</li>
+                            <li class="consult_answer_time">2017-07-11 16:44:06</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="consult_extra">
+                    购买之前，如有问题，请咨询<a class="offline" href="#">留言咨询</a>，或<a href="#"> [发表咨询]</a>
+                    <p>共<span>101</span>条   <a href="#">浏览所有咨询信息&gt;&gt;</a></p>
+                </div>
+            </div>
+
+            <!--讨论-->
+            <div id="discuss">
+                <ul class="main_tabs">
+                    <li class="current"><a href="#">网友讨论圈</a></li>
+                    <li><a href="#">晒单帖</a></li>
+                    <li><a href="#">讨论帖</a></li>
+                    <li><a href="#">问答贴</a></li>
+                    <li><a href="#">圈子贴</a></li>
+                </ul>
+                <table id="discuss-datas">
+                    <tr class="header">
+                        <td class="col1">主题</td>
+                        <td class="col2">回复/浏览</td>
+                        <td class="col3">作者</td>
+                        <td class="col4">时间</td>
+                    </tr>
+                    <tbody>
+                    <tr>
+                        <td class="col1">
+                            <b class="topic shai"></b>
+                            <a href="#">好大一袋，不错</a>
+                        </td>
+                        <td>0/0</td>
+                        <td>
+                            <a href="#">2001年冬天</a>
+                        </td>
+                        <td>2017-7-19</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">
+                            <b class="topic lun"></b>
+                            <a href="#">超级划算，活动给力</a>
+                        </td>
+                        <td>0/0</td>
+                        <td>
+                            <a href="#">xpx2001</a>
+                        </td>
+                        <td>2017-7-18</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">
+                            <b class="topic lun"></b>
+                            <a href="#">超级划算，活动给力</a>
+                        </td>
+                        <td>0/0</td>
+                        <td>
+                            <a href="#">xpx2001</a>
+                        </td>
+                        <td>2017-7-18</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">
+                            <b class="topic shai"></b>
+                            <a href="#">好大一袋，不错</a>
+                        </td>
+                        <td>0/0</td>
+                        <td>
+                            <a href="#">2001年冬天</a>
+                        </td>
+                        <td>2017-7-19</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="discuss_extra">
+                    <div class="newdiscuss">
+                        <span>有问题要与其他用户讨论？</span>
+                        <a href="#" >[发表帖子]</a>
+                    </div>
+                    <div class="totaldiscuss">
+                        <span>共900个话题</span>
+                        <a href="#">浏览全部话题&gt;&gt;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--页面底部! -->
+    <footer id="footer">
+        <div class="footer-hd">
+            <ul>
+                <li><a href="#">影子科技</a></li>
+                <li><b>|</b><a href="#">商城首页</a></li>
+                <li><b>|</b><a href="#">支付宝</a></li>
+                <li><b>|</b><a href="#">物流</a></li>
+            </ul>
+        </div>
+        <div class="footer-bd">
+            <ul>
+                <li><a href="#">关于影子</a></li>
+                <li><a href="#">合作伙伴</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">网站地图</a></li>
+                <li><a href="#">© 2017-2025</a></li>
+                <li><a href="#">mozi.com 版权所有</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!--模态登录对话框-->
+    <div class="modal" id="myModal" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4>用户登录</h4>
+                </div>
+                <!--<h4>用户登录</h4>-->
+                <p class="alert">
+                    请在此处输入您的注册信息。
+                </p>
+                <form id="login-form">
+                    <input type="text" placeholder="请输入登录用户名" name="uname" id="uname" value="denglu">
+                    <input type="password" placeholder="请输入登录密码" name="upwd" id="upwd" value="123456">
+                    <input type="button" value="提交登录信息" id="bt-login">
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/detail.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootlint.js"></script>
+    <script src="js/motaikuang.js"></script>
+    <script>
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+需要在文件夹的路径 是 c--xampp-htdocs-web1703-php下面的  还要开启Apache服务器 进入到数据库
+mysql -uroot -p   
+use jd
+然后访问 要加上 127.0.0.1
+http://127.0.0.1/web1703/php/jdscxm/jdzj/productlist.html
+这个就可以访问  前提是放在这个文件夹的目录下面 才能运行

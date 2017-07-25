@@ -1,0 +1,26 @@
+功能模块
+模块一:用户登录
+1.创建表，添加测试数据
+用户名：uid/uname/upwd         jd_user
+产品表：pid/pname/price/pic    jd_product 不填
+购物车表：cid/pid/count/uid    jd_cart    
+cid 购物车编号
+pid 产品编号
+count 数量
+uid  用户编号
+
+
+  0.创建文件夹jd
+  1.创建jd.sql与该模块相关表创建成功，添加测试数据
+  2.分析程序创建php
+  3.分析html创建js
+
+2.创建php/html
+模块二：查询产品列表
+
+完成产品列表的总页数
+data/productpage.php
+
+
+模块三：添加到购物车
+模块四：查询购物车信息
