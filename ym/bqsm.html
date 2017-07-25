@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/global.css" rel="stylesheet" type="text/css" />
+    <link href="css/ylnews.css" rel="stylesheet" type="text/css"/>
+    <link href="css/ylnews2.css" rel="stylesheet" type="text/css"/>
+    <title>有料列表页</title>
+
+    <!--引入公共js-->
+    <script type="text/javascript" src="js/fbl.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+</head>
+<body>
+<header class="head-grey clearfix">
+    <div class="fl head_l ">
+        <a href="javascript:window.history.back(-1)" class="icon back"></a>
+        <h1></h1>
+    </div>
+    <div class="fr head_r" id="btnBlock">
+        <a href="#" class="goso"><img src="images/search.png"></a>
+        <a href="javascript:;" onclick="jumpToLoginPage('android');" class="btnUser" id="userLoginBox"><img src="images/login.png"></a>
+    </div>
+
+    <!--搜索开始-->
+    <section class="sobox" style="display:none">
+        <div class="socont">
+            <div class="search_form">
+                <input type="text" id="searchinput" name="q" class="so_text_search" value="">
+                <input type="button" class="smbnt" value="" onclick="javascript:getSearch();">
+            </div>
+            <!--标签云-->
+            <div class="mod-tag-cloud" id="searchJG">
+                <div id="tagCloud" class="tagbox">
+                    <ul>
+                        <li class="fs-28 color-red"><a href="javascript:void(0);" onclick="javascript:selectSearchKey('传奇', '7');">传奇</a></li>
+                        <li class="fs-21 color-blue"><a href="javascript:void(0);" onclick="javascript:selectSearchKey('斗地主', '3');">斗地主</a></li>
+                        <li class="fs-18 color-green"><a href="javascript:void(0);" onclick="javascript:selectSearchKey('去哪儿', '6');">去哪儿</a></li>
+                        <li class="fs-13 color-purple"><a href="javascript:void(0);" onclick="javascript:selectSearchKey('勇士', '4');">勇士</a></li>
+                        <li class="fs-13 color-gray"><a href="javascript:void(0);" onclick="javascript:selectSearchKey('水果忍者', '2');">水果忍者</a></li>
+                        <li class="fs-13 color-yellow"><a href="javascript:void(0);" onclick="javascript:selectSearchKey('咪咕棋牌', '1');">咪咕棋牌</a></li>
+                        <li class="fs-14 color-cyan"><a href="javascript:void(0);" onclick="javascript:selectSearchKey('糖果', '8');">糖果</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--标签云-->
+            <!--关键字-->
+            <ul class="tagkey" style="display:none">
+                <li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('咪咕棋牌', '1');">咪咕棋牌</a></li><li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('水果忍者', '2');">水果忍者</a></li><li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('斗地主', '3');">斗地主</a></li><li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('勇士', '4');">勇士</a></li><li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('天堂酷跑', '5');">天堂酷跑</a></li><li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('去哪儿', '6');">去哪儿</a></li><li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('传奇', '7');">传奇</a></li><li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('糖果', '8');">糖果</a></li><li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('刀塔传奇', '9');">刀塔传奇</a></li><li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('你妹', '10');">你妹</a></li>
+            </ul>
+            <!--关键字-->
+        </div>
+        <script type="text/javascript">
+            shakeKeyWords();
+            showSearch();
+        </script>
+    </section>
+    <!--搜索结束-->
+
+</header>
+<!--内容-->
+<section class="m-news copyright ">
+    <h2>版权声明</h2>
+    <div class="content_cp">
+        <p>本网站所收集的部分公开资料来源于互联网，并不代表本站赞同其观点和对其真实性负责，也不构成任何其他建议，如其他媒体、网络或个人从本网下载使用须自负版权等法律责任。本站转载的所有文章 、图片、音频、视频文件等资料的版权归版权所有人所有，本站采用的非本站原创文章及图片等内容无法一一和版权者联系，如果您发现网站上有侵犯您的知识产权的作品，请与我们取得联系，我们会及时做出处理。</p>
+        <p> 本网站所提供的信息，只供参考，不做交易和服务的根据。本网站不保证信息的准确性、有效性、及时性和完整性。本网站及其雇员一概毋须以任何方式就任何信息传递或传送的失误、不准确或错误，对用户或任何其他人士负任何直接或间接责任。如自行使用本网资料发生偏差，本站概不负责，亦不负任何法律责任。在法律允许的范围内，本网站在此声明，不承担用户或任何人士就使用或未能使用本网站所提供的信息或任何链接所引致的任何直接、间接、附带、从属、特殊、惩罚性或惩戒性的损害赔偿。</p>
+    </div>
+</section>
+<!--底部导航-->
+<nav class="foot-nav m-game hot-class">
+    <div class="line line-grey"></div>
+    <ul>
+        <li>
+            <a href="#">首页</a>
+            <div class="line-s line-sgrey"></div>
+        </li>
+        <li>
+            <a href="#">单机</a>
+            <div class="line-s line-sgrey"></div>
+        </li>
+        <li>
+            <a href="#">网游</a>
+            <div class="line-s line-sgrey"></div>
+        </li>
+        <li>
+            <a href="#">资讯</a>
+            <div class="line-s line-sgrey"></div>
+        </li>
+        <li>
+            <a href="#">分类</a>
+        </li>
+    </ul>
+
+</nav>
+<div class="line line-grey"></div>
+<script type="text/javascript">
+    $(function(){
+        $(".foot-nav ul li:eq(0) a").addClass("currt");
+    });
+</script>
+<!--底部导航end-->
+
+
+
+
+<!--底部链接-->
+<footer class="foot" >
+    <p>
+        <a href="#">阅读</a>
+        <a href="#">视频</a>
+        <a href="#">音乐</a>
+    </p>
+    <p>
+        <a href="#">营业厅</a>
+        <a href="#">净网2014</a>
+        <a href="#">升级公告</a>
+    </p>
+    <p>京ICP备05002571号<br />咪咕互动娱乐有限公司版权所有</p>
+
+</footer>
+<!--底部链接end-->
+</body>
+</html>

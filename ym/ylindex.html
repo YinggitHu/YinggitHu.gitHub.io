@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/global.css" rel="stylesheet" type="text/css" />
+    <link href="css/ylnews.css" rel="stylesheet" type="text/css"/>
+    <title>有料列表页</title>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/fbl.js"></script>
+</head>
+<body>
+<!--头部-->
+    <header class="head-grey clearfix">
+        <div class="fl head_l ">
+            <a href="#" class="icon back"></a>
+            <h1>有料</h1>
+        </div>
+        <div class="fr head_r" id="btnBlock">
+            <a href="#" class="goso"><img src="images/search.png"></a>
+            <a href="#" class="btnUser" id="userLoginBox"><img src="images/login.png"></a>
+        </div>
+
+        <!--搜索开始-->
+        <section class="sobox" style="display:none">
+            <div class="socont">
+                <div class="search_form">
+                    <input type="text" id="searchinput" name="q" class="so_text_search" value="">
+                    <input type="button" class="smbnt" value="" onclick="javascript:getSearch();">
+                </div>
+                <!--标签云-->
+                <div class="mod-tag-cloud" id="searchJG">
+                    <div id="tagCloud" class="tagbox">
+                        <ul>
+                            <li class="fs-28 color-red"><a href="javascript:void(0);" onclick="javascript:selectSearchKey('勇士', '4');">勇士</a></li>
+                            <li class="fs-21 color-blue"><a href="javascript:void(0);" onclick="javascript:selectSearchKey('去哪儿', '6');">去哪儿</a></li>
+                            <li class="fs-18 color-green"><a href="javascript:void(0);" onclick="javascript:selectSearchKey('水果忍者', '2');">水果忍者</a></li>
+                            <li class="fs-13 color-purple"><a href="javascript:void(0);" onclick="javascript:selectSearchKey('天堂酷跑', '5');">天堂酷跑</a></li>
+                            <li class="fs-13 color-gray"><a href="javascript:void(0);" onclick="javascript:selectSearchKey('斗地主', '3');">斗地主</a></li>
+                            <li class="fs-13 color-yellow"><a href="javascript:void(0);" onclick="javascript:selectSearchKey('糖果', '8');">糖果</a></li>
+                            <li class="fs-14 color-cyan"><a href="javascript:void(0);" onclick="javascript:selectSearchKey('移动棋牌', '1');">移动棋牌</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--标签云-->
+                <!--关键字-->
+                <ul class="tagkey" style="display:none">
+                    <li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('移动棋牌', '1');">移动棋牌</a></li><li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('水果忍者', '2');">水果忍者</a></li><li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('斗地主', '3');">斗地主</a></li><li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('勇士', '4');">勇士</a></li><li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('天堂酷跑', '5');">天堂酷跑</a></li><li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('去哪儿', '6');">去哪儿</a></li><li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('传奇', '7');">传奇</a></li><li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('糖果', '8');">糖果</a></li><li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('刀塔传奇', '9');">刀塔传奇</a></li><li><a href="javascript:void(0);" onclick="javascript:selectSearchKey('你妹', '10');">你妹</a></li>
+                </ul>
+                <!--关键字-->
+            </div>
+            <script type="text/javascript">
+                shakeKeyWords();
+                showSearch();
+            </script>
+        </section>
+        <!--搜索结束-->
+
+    </header>
+    <!--头部结束-->
+
+    <!--banner-->
+    <section id="pic_img" class="pic_slide ylbn" >
+        <ul  class="pic_swipe" id="pic_swipe" ifxj="1" style="position:relative">
+            <li>
+                <a href="#" title="" class="lb-pic">
+                    <img src="images/yllb.jpg"/>
+                    <span>轻熟少妇俏人妻</span>
+                    <h3 class="lb-tit">女神新装似综艺小女神新装轻熟少妇俏人妻进击小鸟长成记进击小鸟长成记</h3>
+                </a>
+
+                <a href="#" title="" class="lb-pic">
+                    <img src="images/yllb.jpg"/>
+                    <span>轻熟少妇俏人妻</span>
+                    <h3 class="lb-tit">女神新装似综艺小女神新装轻熟少妇俏人妻进击小鸟长成记进击小鸟长成记</h3>
+                </a>
+
+                <a href="#" title="" class="lb-pic">
+                    <img src="images/yllb.jpg"/>
+                    <span>轻熟少妇俏人妻</span>
+                    <h3 class="lb-tit">女神新装似综艺小女神新装轻熟少妇俏人妻进击小鸟长成记进击小鸟长成记</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="" class="lb-pic">
+                    <img src="images/yllb.jpg"/>
+                    <span>颜控多金且未嫁</span>
+                    <h3 class="lb-tit">女神新装似综艺小女神新装轻熟少妇俏人妻进击小鸟长成记进击小鸟长成记</h3>
+                </a>
+
+                <a href="#" title="" class="lb-pic">
+                    <img src="images/yllb.jpg"/>
+                    <span>颜控多金且未嫁</span>
+                    <h3 class="lb-tit">女神新装似综艺小女神新装轻熟少妇俏人妻进击小鸟长成记进击小鸟长成记</h3>
+                </a>
+
+                <a href="#" title="" class="lb-pic">
+                    <img src="images/yllb.jpg"/>
+                    <span>颜控多金且未嫁</span>
+                    <h3 class="lb-tit">女神新装似综艺小女神新装轻熟少妇俏人妻进击小鸟长成记进击小鸟长成记</h3>
+                </a>
+            </li>
+        </ul>
+        <div class="line line-grey"></div>
+        <script type="text/javascript">
+            var g_app = {
+                topic_img_div:"pic_swipe",
+                slider_bar:".slider_bar",}
+            picSlide();
+        </script>
+    </section>
+
+<!--banner结束-->
+
+
+
+
+<!--火力推荐-->
+<section class="m-news">
+    <div class="line line-grey"></div>
+    <div class="yltj  clearfix">
+        <h2 class="yl-icon">小编火力推荐</h2>
+        <div class="line line-grey"></div>
+    </div>
+    <ul class="news-list" id="hltj-list">
+        <li>
+            <a href="yllby.html"  target="_blank" class="news-tj yl-icon clearfix">
+                <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                <span class="fr news-time">07.10</span>
+            </a>
+            <div class="line line-grey"></div>
+        </li>
+        <li>
+            <a href="yllby.html"  target="_blank" class="news-tj  yl-icon clearfix">
+                <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                <span class="fr news-time">07.10</span>
+            </a>
+            <div class="line line-grey"></div>
+        </li>
+        <li>
+            <a href="yllby.html"  target="_blank" class="news-tj  yl-icon clearfix">
+                <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                <span class="fr news-time">07.10</span>
+            </a>
+            <div class="line line-grey"></div>
+        </li>
+
+        <script>
+            (function(){
+                var li = document.getElementById('hltj-list').getElementsByTagName('a'),i;
+                for ( i=0; i < li.length; i++) {
+                    li[i].onclick = function(){
+                        this.className = "news-tjv";
+                    }
+                };
+            })();
+        </script>
+
+
+    </ul>
+    <!--火力推荐游戏-->
+    <div class="m-list" >
+        <ul class="glist-dt4 clearfix">
+            <li class="fl">
+                <a href="#" class="game-warp clearfix">
+                    <img class="game-logo" src="images/gm-logo.jpg" />
+                    <span class="tit-op">12.55M</span>
+                </a>
+                <a>
+                    <h4 class="game-tit">疯狂摩托车越野赛2</h4>
+                </a>
+                <a class="dt4-download">下载</a>
+                <div class="line line-grey"></div>
+            </li>
+            <li class="fl">
+                <a href="#" class="game-warp clearfix">
+                    <img class="game-logo" src="images/gm-logo.jpg" />
+                    <span class="tit-op">12.55M</span>
+                </a>
+                <a>
+                    <h4 class="game-tit">疯狂摩托车越野赛2</h4>
+                </a>
+                <a class="dt4-download">下载</a>
+                <div class="line line-grey"></div>
+            </li>
+            <li class="fl">
+                <a href="#" class="game-warp clearfix">
+                    <img class="game-logo" src="images/gm-logo.jpg" />
+                    <span class="tit-op">12.55M</span>
+                </a>
+                <a>
+                    <h4 class="game-tit">疯狂摩托车越野赛2</h4>
+                </a>
+                <a class="dt4-download">下载</a>
+                <div class="line line-grey"></div>
+            </li>
+            <li class="fl">
+                <a href="#" class="game-warp clearfix">
+                    <img class="game-logo" src="images/gm-logo.jpg" />
+                    <span class="tit-op">12.55M</span>
+                </a>
+                <a>
+                    <h4 class="game-tit">疯狂摩托车越野赛2</h4>
+                </a>
+                <a class="dt4-download">下载</a>
+                <div class="line line-grey"></div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!--火力推荐end-->
+
+
+
+
+
+    <!--游人有语-->
+    <section class="m-news">
+        <div class="mnews-tit yryy-tit clearfix">
+            <span class="tit-line fl"></span>
+            <a href="#" class="yl-icon"></a>
+            <span class="tit-line fr"></span>
+        </div>
+        <ul class="news-list">
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记成记进击小鸟长成记成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+        </ul>
+        <a href="#" class="y-more news-more yl-icon">查看更多游人有语</a>
+        <div class="line line-grey"></div>
+    </section>
+    <!--游人有语结束-->
+
+
+
+    <!--周扒皮-->
+    <section class="m-news">
+        <div class="line line-grey"></div>
+        <div class="mnews-tit zpp-tit clearfix">
+            <span class="tit-line fl"></span>
+            <a href="#" class="yl-icon"></a>
+            <span class="tit-line fr"></span>
+        </div>
+        <ul class="news-list">
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+
+        </ul>
+        <a href="#" class="z-more news-more yl-icon">查看更多周扒皮</a>
+        <div class="line line-grey"></div>
+    </section>
+  <!--周扒皮结束-->
+
+
+    <!--暴走解剖室-->
+
+    <section class="m-news">
+        <div class="line line-grey"></div>
+        <div class="mnews-tit bz-tit clearfix">
+            <span class="tit-line fl"></span>
+            <a href="#" class="yl-icon"></a>
+            <span class="tit-line fr"></span>
+        </div>
+        <ul class="news-list">
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+        </ul>
+        <a href="#" class="b-more news-more yl-icon">查看更多暴走解剖室</a>
+        <div class="line line-grey"></div>
+    </section>
+
+    <!--暴走解剖室结束-->
+
+
+    <!--拜见女神-->
+
+    <section class="m-news">
+        <div class="line line-grey"></div>
+        <div class="mnews-tit ns-tit clearfix">
+            <span class="tit-line fl"></span>
+            <a href="#" class="yl-icon"></a>
+            <span class="tit-line fr"></span>
+        </div>
+        <ul class="news-list">
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li><li>
+            <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                <span class="fr news-time">07.10</span>
+            </a>
+            <div class="line line-grey"></div>
+        </li>
+        </ul>
+        <a href="#" class="n-more news-more yl-icon">查看更多拜见女神</a>
+        <div class="line line-grey"></div>
+    </section>
+
+    <!--拜见女神结束-->
+
+    <!--游戏情报局-->
+
+    <section class="m-news">
+        <div class="line line-grey"></div>
+        <div class="mnews-tit qbj-tit clearfix">
+            <span class="tit-line fl"></span>
+            <a href="#" class="yl-icon"></a>
+            <span class="tit-line fr"></span>
+        </div>
+        <ul class="news-list">
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+        </ul>
+        <a href="#" class="q-more news-more yl-icon">查看更多游戏情报局</a>
+        <div class="line line-grey"></div>
+    </section>
+
+    <!--游戏情报局结束-->
+
+    <!--五花大绑-->
+
+    <section class="m-news">
+        <div class="line line-grey"></div>
+        <div class="mnews-tit whdb-tit clearfix">
+            <span class="tit-line fl"></span>
+            <a href="#" class="yl-icon"></a>
+            <span class="tit-line fr"></span>
+        </div>
+        <ul class="news-list">
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+            <li>
+                <a href="yllby.html"  target="_blank" class="news-con clearfix">
+                    <h3 class="fl news-tit">进击小鸟长成记进击小鸟长成记</h3>
+                    <span class="fr news-time">07.10</span>
+                </a>
+                <div class="line line-grey"></div>
+            </li>
+        </ul>
+        <a href="#" class="w-more news-more yl-icon">查看更多五花大绑</a>
+
+    </section>
+<div class="line line-grey"></div>
+    <!--游戏情报局结束-->
+
+
+<!--底部-->
+
+
+    <!--底部导航-->
+    <nav class="foot-nav m-game hot-class">
+        <div class="line line-grey"></div>
+        <ul>
+            <li>
+                <a href="#">首页</a>
+                <div class="line-s line-sgrey"></div>
+            </li>
+            <li>
+                <a href="#">单机</a>
+                <div class="line-s line-sgrey"></div>
+            </li>
+            <li>
+                <a href="#">网游</a>
+                <div class="line-s line-sgrey"></div>
+            </li>
+            <li>
+                <a href="#">新品</a>
+                <div class="line-s line-sgrey"></div>
+            </li>
+            <li>
+                <a href="#">排行</a>
+            </li>
+        </ul>
+
+    </nav>
+    <div class="line line-grey"></div>
+    <script type="text/javascript">
+        $(function(){
+            $(".foot-nav ul li:eq(0) a").addClass("currt");
+        });
+    </script>
+    <!--底部导航end-->
+
+
+
+
+    <!--底部链接-->
+    <footer class="foot" >
+        <p>
+            <a href="#">阅读</a>
+            <a href="#">视频</a>
+            <a href="#">音乐</a>
+        </p>
+        <p>
+            <a href="#">营业厅</a>
+            <a href="#">净网2014</a>
+            <a href="#">升级公告</a>
+        </p>
+        <p>京ICP备05002571号<br />咪咕互动娱乐有限公司版权所有</p>
+
+    </footer>
+    <!--底部链接end-->
+</body>
+</html>

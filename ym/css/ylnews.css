@@ -1,0 +1,77 @@
+
+.yl-icon{ background: url(../images/yltit.png) no-repeat; background-size:3.17rem 15rem;}
+/*轮播图片*/
+.ylbn{ width: 6.4rem; height: 3.27rem; background: #fff;overflow: hidden;}
+.ylbn li { width: 6.4rem; height: 3.27rem; overflow: hidden;}
+.pic_swipe li a.lb-pic{ display: block; position: relative; width: 2.12rem; height: 3.27rem;margin-right: 0.02rem; float: left; overflow: hidden; }
+.pic_swipe li a.lb-pic:last-child{ margin-right: 0;}
+.pic_swipe li a.lb-pic img{ display: block; width: 2.12rem; height: 2.5rem; overflow: hidden;}
+.pic_swipe li a.lb-pic span{ display: block; position: absolute;top: 1.8rem; left: 0; width: 2.12rem; height: 0.5rem;
+    background:rgba(0,0,0,0.3); line-height: 0.5rem; text-align: center; color: #ffffff; font-size: 0.24rem; overflow: hidden;}
+.pic_swipe li a .lb-tit{ height:0.52rem;margin: 0.08rem 0.15rem 0.17rem 0.15rem;line-height: 0.26rem; font-size: 0.2rem; color: #777777;
+    overflow : hidden;text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient:vertical; }
+
+/*栏目列表*/
+.m-news{width: 100%; margin: 0.2rem auto 0 auto; background: #fff; overflow: hidden;}
+.news-list{width: 96%; margin: 0 auto;}
+.news-list .news-con{ background: none;display: block; height: 0.75rem; line-height: 0.75rem; padding-left: 0.1rem; cursor: pointer; overflow: hidden;}
+.news-list li:nth-child(1) .news-con, .news-list li:nth-child(2) .news-con
+        {background: url(../images/yltit.png) no-repeat -2.44rem -13.85rem; background-size:3.17rem 15rem;padding-left: 0.6rem;}
+.news-tit{display: inline-block;width: 4.95rem; overflow:hidden; text-overflow: ellipsis;
+    white-space: nowrap; font-size: 0.24rem; color:#777;}
+.news-list li:nth-child(1) .news-tit,.news-list li:nth-child(2) .news-tit{width: 4.45rem; }
+.news-time{ display: inline-block; width: 0.69rem; text-align: center; color: #aaaaaa; font-size: 0.2rem;}
+
+/*火力推荐*/
+.yltj{ width: 96%; height: 0.7rem; line-height: 0.7rem; margin:0 auto; }
+.yltj h2{ width:2rem;background-position: 0.1rem -13.91rem;padding-left: 0.46rem; color: #333333;font-size: 0.28rem; }
+#hltj-list a.news-tj{ display: block; height: 0.75rem; line-height: 0.75rem; background-position: -2.44rem -13.85rem; padding-left: 0.6rem; cursor: pointer; overflow: hidden;}
+#hltj-list .news-tjv{ background: none;display: block; height: 0.75rem; line-height: 0.75rem; padding-left: 0.1rem; cursor: pointer;}
+#hltj-list .news-tj h3{ width:4.45rem;}
+
+
+
+
+
+/*查看更多*/
+.news-more{ display: block; height: 0.75rem; margin: 0 auto; line-height: 0.75rem; font-size: 0.28rem;}
+.y-more{ width:2.6rem; padding:0 0.2rem;background-position:-0.37rem -12.66rem;color: #25cca1;}
+.z-more{ width:2.3rem; padding:0 0.35rem;background-position:-0.52rem -11.46rem;color: #fd9321;}
+.b-more{ width:2.87rem; padding:0 0.06rem;background-position:-0.25rem -10.41rem;color: #a377e0;}
+.n-more{ width:2.58rem; padding:0 0.21rem;background-position:2.54rem -12.66rem;color: #f16364;}
+.q-more{width:2.85rem; padding:0 0.07rem;background-position:2.67rem -11.46rem;color: #3bafda;}
+.w-more{width:2.58rem; padding:0 0.21rem;background-position:2.54rem -10.41rem;color: #5dc064;}
+
+/*栏目列表标题*/
+.mnews-tit{ position: relative; height: 0.65rem; overflow: hidden;}
+.yryy-tit{ margin: 0.33rem 0 0.15rem 0;}
+.zpp-tit,.bz-tit,.ns-tit,.qbj-tit,.whdb-tit{ margin: 0.4rem 0 0.15rem 0;}
+
+
+/*栏目列表标题线*/
+.tit-line{ display: inline-block; width: 1.64rem; height: 0.02rem;  margin-top: 0.38rem; overflow: hidden;}
+.yryy-tit span{background: #25cca1;}
+.zpp-tit span{ background:#fd9321; }
+.bz-tit span{ background:#a377e0; }
+.ns-tit span{ background:#ea5c5c; }
+.qbj-tit  span{ background:#3bafda; }
+.whdb-tit span{ background:#5dc064; }
+
+
+/*栏目列表标题图*/
+.mnews-tit a{ position: absolute; top:0; left: 1.61rem; width: 3.17rem; height: 0.65rem;}
+.yryy-tit a{  background-position: 0 0;}
+.zpp-tit a{background-position:0 -1.77rem; }
+.bz-tit a{background-position:0 -3.35rem; }
+.ns-tit a{background-position:0 -4.84rem; }
+.qbj-tit a{background-position:0 -6.97rem; }
+.whdb-tit a{background-position:0 -8.7rem; }
+
+
+
+
+
+
+
+
+
